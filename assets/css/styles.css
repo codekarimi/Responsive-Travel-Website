@@ -511,16 +511,116 @@ img {
 
 
 /*=============== FOOTER ===============*/
+.footer{
+  padding-block: 2.5rem;
+  background-color: var(--container-color);
 
+}
+
+.footer--content{
+  row-gap: 3.5rem;
+}
+
+.footer--logo{
+  display: inline-block;
+  color: var(--title-color);
+  font-family: var(--second-font);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 1rem;
+}
+.footer--data{
+  grid-template-columns: repeat(2,max-content);
+  gap: 2.5rem 3.5rem;
+}
+
+.footer--title{
+  font-size: var(--h3-font-size);
+  margin-bottom: 1rem;
+}
+
+.footer--links{
+  display: grid;
+  row-gap: .75rem;
+}
+
+.footer--link{
+  color: var(--text-color);
+  transition: color .4s;
+}
+
+.footer--link:hover{
+  color: var(--title-color);
+}
+
+.footer--group,
+.footer--social{
+  display: flex;
+}
+
+.footer--group{
+  margin-top: 5rem;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+
+.footer--social{
+  column-gap: 1.5rem;
+}
+.footer--social-link{
+  color: var(--text-color);
+  font-size: 1.25rem;
+  transition: color .4s ,tranform .4s;
+}
+.footer--social-link:hover{
+  color: var(--title-color);
+  transform: translateY(-.25rem);
+}
+.footer--copy{
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+  text-align: center;
+}
 
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(0, 0%, 10%); 
+}
+::-webkit-scrollbar-thumb{
+  border-radius: .5rem;
+  background-color: hsl(0,0%,20%);
+}
+::-webkit-scrollbar-thumb:hover {
+  border-radius: .5rem;
+  background-color: hsl(0, 0%, 30%);
+}
 
 
 /*=============== SCROLL UP ===============*/
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  /* bottom: 3rem; */
+  background-color: hsla(0, 0%, 100%, 0.1);
+  padding: 6px;
+  display: inline-flex;
+  color: var(--title-color);
+  font-size: 1.2rem;
+  backdrop-filter: blur(24px);
+  z-index: var(--z-tooltip);
+  transition: bottom .4s , tranform .4s;
+}
 
-
+.scrollup:hover{
+  transform: translateY(-.25rem);
+}
 /* Show Scroll Up */
-
+.show-scroll{
+  bottom: 3rem;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
