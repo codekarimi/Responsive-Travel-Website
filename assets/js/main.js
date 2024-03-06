@@ -36,6 +36,9 @@ const scrollHeader = () =>{
 }
 window.addEventListener('scroll', scrollHeader)
 
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr =scroll
+
 /*=============== TESTIMONIAL SWIPER ===============*/
 let testimonialSwiper = new Swiper(".testimonial-swiper", {
     spaceBetween: 30,
